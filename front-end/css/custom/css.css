@@ -1,0 +1,97 @@
+body {
+  font-family: cursive;
+  background-color: var(--color_black);
+  color: var(--color_white);
+}
+/* Scoll bar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color_black);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color_white);
+}
+:root {
+  --heigth: 650px;
+  --color_white: #fbf5f1;
+  --color_black: #222;
+}
+.bg--white {
+  background-color: var(--color_white);
+}
+.bg--black {
+  background-color: var(--color_black);
+}
+.color--white {
+  color: var(--color_white);
+}
+.color--black {
+  color: var(--color_black);
+}
+
+p {
+  text-align: justify;
+}
+
+.showtotop {
+  opacity: 0;
+}
+
+.active .showtotop {
+  animation: showTop 0.7s ease-in-out 1 forwards;
+}
+
+.delay--01 {
+  animation-delay: 0.1s !important;
+}
+.delay--02 {
+  animation-delay: 0.2s !important;
+}
+.delay--03 {
+  animation-delay: 0.3s !important;
+}
+.delay--04 {
+  animation-delay: 0.4s !important;
+}
+.delay--05 {
+  animation-delay: 0.5s !important;
+}
+.delay--06 {
+  animation-delay: 0.6s !important;
+}
+.delay--07 {
+  animation-delay: 0.7s !important;
+}
+.delay--08 {
+  animation-delay: 0.8s !important;
+}
+.delay--09 {
+  animation-delay: 0.9s !important;
+}
+.delay--10 {
+  animation-delay: 1s !important;
+}
+
+/* animation */
+@keyframes showTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
