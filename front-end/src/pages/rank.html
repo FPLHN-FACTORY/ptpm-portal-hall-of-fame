@@ -1,0 +1,107 @@
+<section ng-init="randomBackground()" id="rank" ng-init="init()">
+  <section class="active color--white pt__70px pb__70px">
+    <div class="container showtotop delay--01">
+      <h1 class="text-center">VINH DANH THÀNH VIÊN</h1>
+    </div>
+  </section>
+
+  <section class="active section__home color--white pt__70px pb__70px">
+    <div class="container container__home showtotop delay--01">
+      <div class="row section__home">
+        <div class="live-leaderboard">
+          <div class="live-leaderboard-table">
+            <div class="live-leaderboard-table-header">
+              <div class="col-player-rank-header">STT</div>
+              <div class="col-player-name-header">Tên</div>
+              <div class="col-player-points-header">Điểm</div>
+            </div>
+            <div>
+              <div class="live-leaderboard-player-row">
+                <div class="col-player-rank">1</div>
+                <div class="col-player-avatar avatar-fire">
+                  <img
+                    alt="avatar"
+                    ng-src="../assets/img/avatar/{{randomAvatar[0]}}"
+                  />
+                </div>
+                <div class="col-player-name">
+                  <a href="#">PH26782 - Nguyễn Quốc Huy</a>
+                </div>
+                <div class="col-player-points">10.000</div>
+              </div>
+              <div class="live-leaderboard-player-row">
+                <div class="col-player-rank">2</div>
+                <div class="col-player-avatar avatar-fire">
+                  <img
+                    alt="avatar"
+                    ng-src="../assets/img/avatar/{{randomAvatar[1]}}"
+                  />
+                </div>
+                <div class="col-player-name">
+                  <a href="#">PH26782 - Nguyễn Quốc Huy</a>
+                </div>
+                <div class="col-player-points">10.000.000</div>
+              </div>
+              <div class="live-leaderboard-player-row">
+                <div class="col-player-rank">3</div>
+                <div class="col-player-avatar avatar-fire">
+                  <img
+                    alt="avatar"
+                    ng-src="../assets/img/avatar/{{randomAvatar[2]}}"
+                  />
+                </div>
+                <div class="col-player-name">
+                  <a href="#">PH26782 - Nguyễn Quốc Huy</a>
+                </div>
+                <div class="col-player-points">10.000.000</div>
+              </div>
+              <div class="live-leaderboard-player-row">
+                <div class="col-player-rank">4</div>
+                <div class="col-player-avatar">
+                  <img
+                    alt="avatar"
+                    ng-src="../assets/img/avatar/{{randomAvatar[3]}}"
+                  />
+                </div>
+                <div class="col-player-name">
+                  <a href="#">PH26782 - Nguyễn Quốc Huy</a>
+                </div>
+                <div class="col-player-points">10.000.000</div>
+              </div>
+              <div class="live-leaderboard-player-row">
+                <div class="col-player-rank">5</div>
+                <div class="col-player-avatar">
+                  <img
+                    alt="avatar"
+                    ng-src="../assets/img/avatar/{{randomAvatar[4]}}"
+                  />
+                </div>
+                <div class="col-player-name">
+                  <a href="#">PH26782 - Nguyễn Quốc Huy</a>
+                </div>
+                <div class="col-player-points">10.000.000</div>
+              </div>
+              <div class="live-leaderboard-player-row">
+                <div class="col-player-rank">6</div>
+                <div class="col-player-avatar">
+                  <img
+                    alt="avatar"
+                    ng-src="../assets/img/avatar/{{randomAvatar[5]}}"
+                  />
+                </div>
+                <div class="col-player-name">
+                  <a href="#">PH26782 - Nguyễn Quốc Huy</a>
+                </div>
+                <div class="col-player-points">10.000.000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination__ui">
+        <button class="button button--left">Previous page</button
+        ><button class="button button--right">Next page</button>
+      </div>
+    </div>
+  </section>
+</section>

@@ -5,8 +5,9 @@ app.config(function ($routeProvider, $locationProvider) {
       templateUrl: "pages/home.html",
       controller: HomeController,
     })
-    .when("/test", {
-      templateUrl: "pages/test.html",
+    .when("/rank", {
+      templateUrl: "pages/rank.html",
+      controller: RankController,
     })
     .otherwise({
       then: "/",

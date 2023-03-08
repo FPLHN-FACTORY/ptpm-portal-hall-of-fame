@@ -1,3 +1,4 @@
-window.HomeController = function ($scope, $window) {
+window.HomeController = function ($scope, $window, $anchorScroll) {
+  $anchorScroll();
   $scope.scrollToElement = HomeCustom.scrollToElement;
 };

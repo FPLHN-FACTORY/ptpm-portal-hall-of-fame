@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cao đẳng FPT Polytechnic</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/img/favicon.ico"
+    />
     <link rel="stylesheet" href="../css/plugin/bootstrap/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -13,21 +19,20 @@
     <link rel="stylesheet" href="../css/custom/css.css" />
     <link rel="stylesheet" href="../css/custom/home.css" />
     <link rel="stylesheet" href="../css/custom/load.css" />
+    <link rel="stylesheet" href="../css/custom/chat-bot.css" />
+    <link rel="stylesheet" href="../css/custom/rank.css" />
   </head>
   <body ng-app="myApp" ng-controller="myCtrl">
-    <header
-      style="
-        height: 50px;
-        background-color: #000;
-        position: fixed;
-        top: 0;
-        z-index: 9999;
-        width: 100%;
-      "
-    ></header>
+    <header ng-include="'layout/header.html'"></header>
     <section ng-include="'layout/loading.html'"></section>
+    <section id="chatBot">
+      <button title="chat bot">
+        <img src="../assets/img/chat-bot.gif" alt="" />
+      </button>
+      <div class="message__bot"></div>
+    </section>
     <ng-view></ng-view>
-    <footer style="height: 400px; background-color: aliceblue"></footer>
+    <footer ng-include="'layout/footer.html'"></footer>
 
     <script src="../js/plugin/jquery/jquery.min.js"></script>
     <script src="../js/plugin/boostrap/bootstrap.bundle.min.js"></script>
@@ -35,7 +40,9 @@
     <script src="../lib/angular-route.js"></script>
     <script src="config/myApp.js"></script>
     <script src="../js/custom/home.js"></script>
+    <script src="../js/custom/rank.js"></script>
     <script src="controller/home/home-controller.js"></script>
+    <script src="controller/rank/rank-controller.js"></script>
     <script src="route.js"></script>
   </body>
 </html>
